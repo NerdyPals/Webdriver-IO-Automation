@@ -1,0 +1,32 @@
+{
+  "name": "webdriverio_poc",
+  "version": "1.0.0",
+  "description": "POC for webdriver.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "selenium": "selenium-standalone start",
+    "selenium:install": "selenium-standalone install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.11.0",
+    "@wdio/cli": "^6.12.1",
+    "@wdio/junit-reporter": "^7.0.7",
+    "@wdio/local-runner": "^6.12.1",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/selenium-standalone-service": "^6.12.1",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "allure-commandline": "^2.13.0",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^87.0.4",
+    "local": "^0.3.3",
+    "local-runner": "^0.1.1-alpha",
+    "wdio-chromedriver-service": "^6.0.4",
+    "webdriverio": "^6.12.1"
+  },
+  "dependencies": {}
+}

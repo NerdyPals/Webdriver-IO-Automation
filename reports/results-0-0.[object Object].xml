@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test Alerts" timestamp="2021-03-01T20:10:49" time="13.529" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test Alerts"/>
+      <property name="capabilities" value="chrome.88_0_4324_190.windows"/>
+      <property name="file" value=".\test\alert_test.js"/>
+    </properties>
+    <testcase classname="chrome.88_0_4324_190.windows.Test Alerts" name="Click and Verify the Alert Text" time="13.502">
+      <system-out><![CDATA[
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/url - {"url":"https://the-internet.herokuapp.com/javascript_alerts"}
+RESULT: {"url":"https://the-internet.herokuapp.com/javascript_alerts"}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/element - {"using":"css selector","value":"ul li:nth-child(1) button"}
+RESULT: {"using":"css selector","value":"ul li:nth-child(1) button"}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2782be25-52b7-42c4-9441-25b10b64fd02","ELEMENT":"2782be25-52b7-42c4-9441-25b10b64fd02"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2782be25-52b7-42c4-9441-25b10b64fd02","ELEMENT":"2782be25-52b7-42c4-9441-25b10b64fd02"}]}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/element/2782be25-52b7-42c4-9441-25b10b64fd02/click - {}
+RESULT: {}
+COMMAND: GET /session/f42cc31a51841e8668389bb7a1a01cad/alert/text - {}
+RESULT: {}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/alert/accept - {}
+RESULT: {}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/element - {"using":"css selector","value":"#result"}
+RESULT: {"using":"css selector","value":"#result"}
+COMMAND: GET /session/f42cc31a51841e8668389bb7a1a01cad/element/9b4db9ce-af30-417e-aa1f-3c2631260951/text - {}
+RESULT: {}
+COMMAND: POST /session/f42cc31a51841e8668389bb7a1a01cad/element - {"using":"css selector","value":"#result"}
+RESULT: {"using":"css selector","value":"#result"}
+COMMAND: GET /session/f42cc31a51841e8668389bb7a1a01cad/element/9b4db9ce-af30-417e-aa1f-3c2631260951/text - {}
+RESULT: {}
+COMMAND: DELETE /session/f42cc31a51841e8668389bb7a1a01cad - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
